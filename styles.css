@@ -5,3 +5,121 @@
 @media(max-width:850px){.links{display:none;position:absolute;top:82px;left:0;right:0;background:#090909;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}.links.open{display:flex}.mobile-toggle{display:block;background:none;border:1px solid var(--line);color:var(--gold);padding:8px 12px}.nav .navcta{display:none}.hero-grid,.split,.calc-layout{grid-template-columns:1fr}.hero{padding:55px 0}.hero-art{min-height:300px}.grid.cols3{grid-template-columns:repeat(2,1fr)}.grid.cols4{grid-template-columns:repeat(2,1fr)}.countries{grid-template-columns:repeat(2,1fr)}.roadmap{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.cta{display:block}.cta .btn{margin-top:20px}}
 @media(max-width:540px){.wrap{width:min(100% - 28px,var(--max))}.navin{height:70px}.brand{font-size:18px}.links{top:70px}.hero h1{font-size:42px}.grid.cols3,.grid.cols4,.roadmap,.footer-grid{grid-template-columns:1fr}.section{padding:58px 0}.hero-stat{left:12px;right:12px;bottom:12px}.hero-stat div{padding:9px}.hero-stat b{font-size:17px}.hero-art{min-height:260px}.cta{padding:25px}.cta h2{font-size:25px}}
 .whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:30;width:54px;height:54px;border-radius:50%;background:#1fbf69;color:#fff;display:grid;place-items:center;font-weight:800;box-shadow:0 8px 25px #0008;border:2px solid #fff3}
+
+/* SPEAR MARKETING - CLIENT RESULTS */
+
+.results-section {
+  background: #080808;
+  color: #ffffff;
+  padding: 90px 6%;
+}
+
+.results-section .wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.results-section .section-head {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.results-section .eyebrow {
+  color: #d4af37;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.results-section h2 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.results-section .gold {
+  color: #d4af37;
+}
+
+.results-section .section-head p {
+  color: #b5b5b5;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.result-card {
+  background: linear-gradient(145deg, #191919, #0d0d0d);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 14px;
+  padding: 32px 24px;
+  transition: 0.3s ease;
+}
+
+.result-card:hover {
+  border-color: #d4af37;
+  transform: translateY(-5px);
+}
+
+.result-platform {
+  color: #d4af37;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.result-card h3 {
+  color: #e3c46b;
+  font-size: clamp(25px, 3vw, 34px);
+  margin: 22px 0 12px;
+}
+
+.result-card p {
+  color: #c0c0c0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.result-card b {
+  display: inline-block;
+  color: #d4af37;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 30px;
+  padding: 7px 13px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.results-note {
+  color: #888888;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+  .results-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .results-section {
+    padding: 65px 5%;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    padding: 27px 22px;
+  }
+}
